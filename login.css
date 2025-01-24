@@ -1,0 +1,69 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.box{
+    background-image: linear-gradient(to right, black , grey); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    gap: 4rem;
+}
+.inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   width: 50%;
+   height: auto;
+   
+}
+.text{
+    width: 40%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+color: white;
+}
+.big{
+font-size: 5rem;
+margin-bottom: 4rem;
+font-weight: 900;
+margin-bottom: 0px;
+}
+
+@media(max-width:710px){
+
+    .box{
+        flex-direction: column;
+    }
+.big{
+font-size: 3rem;
+margin-bottom: 2rem;
+font-weight: 900;
+
+}
+.text{
+    height: 10rem;
+}
+.small{
+font-size: 0.7rem;
+margin-top: 0px;
+}
+
+
+}
+  
