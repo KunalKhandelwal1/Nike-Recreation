@@ -166,5 +166,9 @@ video{
 
 .corsel { transition: all .4s ease-in-out; }
 .corsel:hover { transform: scale(1.08); }
+.bright::selection{
+  color: yellow;
+  background-color: black;
+}
 
 
