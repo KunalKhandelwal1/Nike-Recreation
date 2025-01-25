@@ -50,6 +50,9 @@ margin-bottom: 0px;
     .box{
         flex-direction: column;
     }
+    .inside{
+        min-width: 100%;
+    }
 .big{
 font-size: 3rem;
 margin-bottom: 2rem;
