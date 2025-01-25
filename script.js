@@ -1,4 +1,4 @@
-const texts = ["Born to Perform.", "Conquer Your Limits"]; // Texts to cycle through
+const texts = ["Born to Perform", "Conquer Your Limits"]; // Texts to cycle through
 const typingSpeed = 100; // Typing speed in ms
 const deletingSpeed = 50; // Deleting speed in ms
 const delayBetweenTexts = 1000; // Pause between typing/deleting each text in ms
@@ -56,3 +56,6 @@ function blinkCursor() {
 // Start the animation
 typeText();
 blinkCursor();
+
+
+

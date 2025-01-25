@@ -36,14 +36,16 @@ h2{
 .image .cover h1{
   font-size: 3rem;
 }
-
+.image .cover{
+  margin-bottom: 20px;
+}
 
 @media (max-width: 710px) {
   .image img {
-    height: 280px;
+    height: 300px;
     transform: rotate(90deg);
     margin-top: 100px;
-    width: 450px;
+    width: 500px;
     margin-bottom: 100px;
   }
   .text {
@@ -63,6 +65,9 @@ h2{
 video{
   margin-top:0px;
   
+}
+.image .cover{
+  margin-bottom:20px;
 }
 .corsel{
     min-width: 20rem;
