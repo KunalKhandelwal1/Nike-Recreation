@@ -53,12 +53,13 @@ margin-bottom: 0px;
     .inside{
         min-width: 100%;
     }
-.big{
-font-size: 3rem;
-margin-bottom: 2rem;
-font-weight: 900;
 
-}
+    .big{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+
+    }
 .text{
     height: 10rem;
 }
