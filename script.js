@@ -64,7 +64,6 @@ gsap.from(".text-center",{
     scrollTrigger:{
       trigger:".text-center",
       scroller:"body",
-      markers:true,
       start:"top 95%"  ,
       scrub: 2, // Smoothly scrub through the animation with the scroll
 
@@ -72,11 +71,10 @@ gsap.from(".text-center",{
 });
 gsap.from(".text h1",{
   duration:2,
-  x:-600,
+  x:-730,
     scrollTrigger:{
       trigger:".text h1",
       scroller:"body",
-      markers:true,
       start:"top 98%"  ,
       scrub:0.1, // Smoothly scrub through the animation with the scroll
 
