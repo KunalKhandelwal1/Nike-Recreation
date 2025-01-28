@@ -41,6 +41,9 @@ h2{
 }
 
 @media (max-width: 710px) {
+  *{
+    overflow-x:hidden ;
+  }
   .image img {
     height: 300px;
     transform: rotate(90deg);

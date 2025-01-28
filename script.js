@@ -58,4 +58,29 @@ typeText();
 blinkCursor();
 
 
+gsap.from(".text-center",{
+  duration:2,
+    opacity:0,
+    scrollTrigger:{
+      trigger:".text-center",
+      scroller:"body",
+      markers:true,
+      start:"top 95%"  ,
+      scrub: 2, // Smoothly scrub through the animation with the scroll
+
+    }
+});
+gsap.from(".text h1",{
+  duration:2,
+  x:-600,
+    scrollTrigger:{
+      trigger:".text h1",
+      scroller:"body",
+      markers:true,
+      start:"top 98%"  ,
+      scrub:0.1, // Smoothly scrub through the animation with the scroll
+
+    }
+});
+
 
