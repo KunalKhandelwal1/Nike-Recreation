@@ -59,7 +59,7 @@ blinkCursor();
 
 
 gsap.from(".text-center",{
-  duration:2,
+  duration:0.1,
     opacity:0,
     scrollTrigger:{
       trigger:".text-center",
@@ -70,15 +70,14 @@ gsap.from(".text-center",{
     }
 });
 gsap.from(".text h1",{
-  duration:2,
-  x:-730,
+  duration:0.4,
+  opacity:-2,
+  x:-640,
     scrollTrigger:{
       trigger:".text h1",
       scroller:"body",
       start:"top 98%"  ,
       scrub:0.1, // Smoothly scrub through the animation with the scroll
-
+      end:"top 10%",
     }
 });
-
-
