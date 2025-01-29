@@ -186,4 +186,24 @@ video{
   background-color: black;
 }
 
+.addition{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  height: 290px;
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.addition>*{
+  overflow-y: hidden;
+}
+.addition a:hover{
+  color: aliceblue !important;
+  background-color: grey;
+  height: 30px;
+  width: auto;
+}
+
 
