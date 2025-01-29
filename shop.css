@@ -1,0 +1,144 @@
+.scrollable-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scroll-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+  
+  .banner-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 5vw;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+  }
+  
+  .left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+
+@media (max-width: 768px) {
+    .scroll-btn {
+      font-size: 20px; 
+      padding: 8px; 
+    }
+  }
+  
+  .mens-shoes {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .card, .collapse, .accordion, .accordion-item{
+    border:none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+
+  }
+
+  .btn-outline-secondary {
+    border: none !important;
+    text-align: left;
+  }
+
+  .accordion-item{
+    border-bottom: 1px solid #ddd;
+  }
+
+  .form-check{
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+  }
+
+  .form-check-input {
+    background-color: white !important; 
+    border-color: black !important;     
+  }
+
+  .form-check-input:checked {
+    background-color: black !important; 
+    border-color: black !important;     
+  }
+
+  .form-check-input:focus {
+    border-color: black !important;
+    box-shadow: none !important;
+  }
+
+  .form-check:hover{
+    color:gray;
+  }
+
+
+  .accordion-body .btn-outline-dark {
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .accordion-body .row {
+    margin-bottom: 15px;
+  }
+
+  .accordion-button {
+    font-weight: bold;
+  }
+
+.d-none {
+  display: none;
+}
+
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #f8f9fa;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+input[type="radio"]:checked + label:hover {
+  background-color: #555;
+}
+
