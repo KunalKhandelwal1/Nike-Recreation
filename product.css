@@ -1,0 +1,158 @@
+/* Scrollable Banner */
+.scrollable-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scroll-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    min-width: 100%; /* Ensures scrollable container has a minimum width */
+  }
+  
+  .banner-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 5vw;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+  }
+  
+  .left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .scroll-btn {
+      font-size: 20px;
+      padding: 8px;
+    }
+  }
+  
+  /* Product Page Styling */
+  .product-detail {
+    padding: 30px 0;
+  }
+  
+  .big-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 2px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    border-color: #007bff; /* Highlight on hover */
+  }
+  
+  /* Make the product name stand out */
+  .product-name {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 20px;
+  }
+  
+  .accordion-button {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 300px; /* Ensure height consistency */
+  }
+  
+  /* Make the layout responsive */
+  @media (max-width: 768px) {
+    .product-detail .row {
+      flex-direction: column;
+    }
+  
+    .col-lg-4, .col-lg-8 {
+      max-width: 100%;
+    }
+  
+    /* Adjust thumbnails for smaller screens */
+    .thumbnail {
+      width: 50px;
+      height: 50px;
+    }
+  
+    /* Make text and padding more mobile-friendly */
+    .product-name {
+      font-size: 1.5rem;
+    }
+  
+    .product-price {
+      font-size: 1.25rem;
+    }
+  
+    .product-description {
+      font-size: 0.9rem;
+    }
+  
+    .carousel-item img {
+      height: 200px; /* Smaller carousel images on mobile */
+    }
+  }
+  

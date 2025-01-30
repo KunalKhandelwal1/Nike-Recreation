@@ -51,25 +51,3 @@ const bannerItems = [
     const itemWidth = items[0] ? items[0].clientWidth : 0;
     container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   }
-
-//Sort By buton
-const dropdownItems = document.querySelectorAll('.dropdown-item');
-const dropdownButton = document.getElementById('selected-option');
-
-dropdownItems.forEach(item => {
-  item.addEventListener('click', function() {
-      const selectedOption = item.getAttribute('data-sort');
-      dropdownButton.textContent = `Sort By: ${selectedOption}`;
-      dropdownButton.classList.add('selected');
-  });
-});
-
-//Like Button
-const heartLinks = document.querySelectorAll('.icon-hover');
-
-heartLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();  
-        link.classList.toggle('liked');
-    });
-});
