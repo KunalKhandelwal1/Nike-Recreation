@@ -39,7 +39,17 @@ h2{
 .image .cover{
   margin-bottom: 20px;
 }
-
+.footer{
+  width: 100%;
+}
+.copyright-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 40px;
+  
+}
 @media (max-width: 710px) {
   *{
     overflow-x:hidden ;
