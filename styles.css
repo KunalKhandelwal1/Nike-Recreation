@@ -3,17 +3,21 @@ body {
   padding: 0px;
   margin: 0px;
 }
-*{
-    overflow-x: hidden;
+
+* {
+  overflow-x: hidden;
 }
-h2{
-    overflow: hidden;
+
+h2 {
+  overflow: hidden;
 }
+
 .image img {
   height: 450px;
   width: 90%;
   margin-bottom: 20px;
 }
+
 .image {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,7 @@ h2{
   justify-content: center;
   text-align: center;
 }
+
 .text h1 {
   overflow: hidden;
   font-size: 4rem;
@@ -33,26 +38,25 @@ h2{
   margin: 0px;
   padding: 0px;
 }
-.image .cover h1{
+.image .cover h1 {
   font-size: 3rem;
 }
-.image .cover{
+.image .cover {
   margin-bottom: 20px;
 }
-.footer{
+.footer {
   width: 100%;
 }
-.copyright-text{
+.copyright-text {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   height: 40px;
-  
 }
 @media (max-width: 710px) {
-  *{
-    overflow-x:hidden ;
+  * {
+    overflow-x: hidden;
   }
   .image img {
     height: 300px;
@@ -72,29 +76,29 @@ h2{
   .part {
     height: 400px;
   }
-.video{
+  .video {
     height: 10rem;
-}
-video{
-  margin-top:0px;
-  
-}
-.image .cover{
-  margin-bottom:20px;
-}
-.corsel{
+  }
+  video {
+    margin-top: 0px;
+  }
+  .image .cover {
+    margin-bottom: 20px;
+  }
+  .corsel {
     min-width: 20rem;
+  }
+  video {
+    min-height: 50rem;
+  }
 }
-video{
-  min-height: 50rem;
 
-}
-}
 .inside {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
 }
+
 .part {
   display: flex;
   height: 450px;
@@ -105,24 +109,25 @@ video{
   overflow-x: scroll;
   gap: 20px;
 }
+
 .corsel {
   background-color: aquamarine;
   height: 400px;
   min-width: 25rem;
 }
 
-.video{
-    margin-top: 30px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    max-width: 90%;
-    max-height: 30rem;
+.video {
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 30rem;
 }
-video{
-    width: 105rem;
+video {
+  width: 105rem;
 }
 
 .bottom {
@@ -136,67 +141,82 @@ video{
   padding: 0px;
   overflow: hidden;
 }
-.first{
-    background-image: url(./Assets/badminton.jpg);
-    background-position: center;
-    background-size: cover;
+.first {
+  background-image: url(./Assets/badminton.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.second{
-    background-image: url(./Assets/basketball.png);
-    background-position: center;
-    background-size: cover;
+.second {
+  background-image: url(./Assets/basketball.png);
+  background-position: center;
+  background-size: cover;
 }
-.third{
-    background-image: url(./Assets/cycling.jpg);
-    background-position: center;
-    background-size: cover;
+.third {
+  background-image: url(./Assets/cycling.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.fourth{
-    background-image: url(./Assets/gym.jpg);
-    background-position: center;
-    background-size: cover;
+.fourth {
+  background-image: url(./Assets/gym.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.fifth{
-    background-image: url(./Assets/Hiking.jpg);
-    background-position: center;
-    background-size: cover;
+.fifth {
+  background-image: url(./Assets/Hiking.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.sixth{
-    background-image: url(./Assets/rugby.jpg);
-    background-position: center;
-    background-size: cover;
+.sixth {
+  background-image: url(./Assets/rugby.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.seventh{
-    background-image: url(./Assets/Football.png);
-    background-position: center;
-    background-size: cover;
+.seventh {
+  background-image: url(./Assets/Football.png);
+  background-position: center;
+  background-size: cover;
 }
-.eigth{
-    background-image: url(./Assets/cricket.png);
-    background-position: center;
-    background-size: cover;
+.eigth {
+  background-image: url(./Assets/cricket.png);
+  background-position: center;
+  background-size: cover;
 }
-.corsel{
-    position: relative;
-    border-radius: 10%;
-    
+.corsel {
+  position: relative;
+  border-radius: 10%;
 }
-.corsel button{
-    position: absolute;
-    top: 300px;
-    left: 40px;
-     height: 3rem;
-     width: 7rem;
+.corsel button {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  height: 3rem;
+  width: 7rem;
 }
 
-.corsel { transition: all .4s ease-in-out; }
-.corsel:hover { transform: scale(1.08); }
-.bright::selection{
+.corsel {
+  transition: all 0.4s ease-in-out;
+}
+.corsel:hover {
+  transform: scale(1.08);
+}
+.bright::selection {
+  color: yellow;
+  background-color: black;
+}
+p::selection {
+  color: yellow;
+  background-color: black;
+}
+h1::selection {
+  color: yellow;
+  background-color: black;
+}
+h2::selection {
   color: yellow;
   background-color: black;
 }
 
-.addition{
+.addition {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -206,14 +226,12 @@ video{
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.addition>*{
+.addition > * {
   overflow-y: hidden;
 }
-.addition a:hover{
+.addition a:hover {
   color: aliceblue !important;
   background-color: grey;
   height: 30px;
   width: auto;
 }
-
-
