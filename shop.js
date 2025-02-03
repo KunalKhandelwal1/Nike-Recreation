@@ -73,3 +73,18 @@ heartLinks.forEach(function(link) {
         link.classList.toggle('liked');
     });
 });
+
+var btn1 = document.querySelectorAll(".btn1");
+btn1.forEach((btn1)=>{
+  btn1.addEventListener("click", () => {
+      let icon = btn1.querySelector("i");
+      if (icon.classList.contains("text-secondary")) {
+          icon.classList.remove("text-secondary");
+          icon.classList.add("text-danger");
+      } else {
+          icon.classList.remove("text-danger");
+          icon.classList.add("text-secondary");
+      }
+  });
+
+});
